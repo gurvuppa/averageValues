@@ -34,6 +34,7 @@ namespace averageValues
             this.outputLabel = new System.Windows.Forms.Label();
             this.titleHeader = new System.Windows.Forms.Label();
             this.resetButton = new System.Windows.Forms.Button();
+            this.staticText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // addButton
@@ -41,7 +42,7 @@ namespace averageValues
             this.addButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(321, 106);
+            this.addButton.Location = new System.Drawing.Point(320, 139);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(65, 43);
             this.addButton.TabIndex = 0;
@@ -52,16 +53,17 @@ namespace averageValues
             // inputBox
             // 
             this.inputBox.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputBox.Location = new System.Drawing.Point(183, 118);
+            this.inputBox.Location = new System.Drawing.Point(177, 149);
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(88, 26);
             this.inputBox.TabIndex = 1;
+         
             // 
             // outputLabel
             // 
             this.outputLabel.BackColor = System.Drawing.Color.White;
             this.outputLabel.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.Location = new System.Drawing.Point(102, 198);
+            this.outputLabel.Location = new System.Drawing.Point(105, 216);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(312, 69);
             this.outputLabel.TabIndex = 2;
@@ -90,12 +92,23 @@ namespace averageValues
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
+            // staticText
+            // 
+            this.staticText.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staticText.Location = new System.Drawing.Point(22, 62);
+            this.staticText.Name = "staticText";
+            this.staticText.Size = new System.Drawing.Size(444, 74);
+            this.staticText.TabIndex = 5;
+            this.staticText.Text = "Enter a number and press add\r\n(enter a 0 and press ADD to calculate the average)";
+            this.staticText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(501, 376);
+            this.Controls.Add(this.staticText);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.titleHeader);
             this.Controls.Add(this.outputLabel);
@@ -115,6 +128,7 @@ namespace averageValues
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Label titleHeader;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Label staticText;
     }
 }
 
